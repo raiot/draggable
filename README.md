@@ -16,7 +16,7 @@ npm start
 ## Usage
 
 ```
-import { bindDraggable } from 'draggable';
+import { bindDraggable } from 'dist/index.js';
 const element = document.getElementById('the-id');
 bindDraggable(element);
 ```
