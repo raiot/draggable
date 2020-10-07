@@ -1,0 +1,29 @@
+section.draggable {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    height: 500px;
+    align-items: center;
+
+    .file, .folder {
+        width: 100px;
+        height: 100px;
+    }
+
+    .file {
+        background-color: red;
+        transform: translate(
+            calc(var(--dx) * 1px),
+            calc(var(--dy) * 1px)
+        )
+    }
+
+    .folder {
+        background-color: blue;
+    }
+}
+
+[data-state="dropped"] .file {
+    transition: transform 1s cubic-bezier(.50,.30,.20,1);
+}

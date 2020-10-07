@@ -1,0 +1,34 @@
+{
+  "name": "dragndrop",
+  "version": "1.0.0",
+  "description": "This is a drag n drop project using xstate",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npm run build && webpack-dev-server",
+    "build": "if [ -d dist ]; then rm -Rf dist; fi && webpack"
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "xstate",
+    "html"
+  ],
+  "author": "Rene Durazo",
+  "license": "MIT",
+  "dependencies": {
+    "xstate": "^4.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.5",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "sass": "^1.26.12",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.3.0",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
