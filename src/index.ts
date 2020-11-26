@@ -8,3 +8,7 @@ if(file && file2) {
     bindDraggable(file);
     bindDraggable(file2);
 }
+
+export {
+    bindDraggable
+}
